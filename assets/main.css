@@ -4994,7 +4994,8 @@ a:hover { color: var(--am-teal); text-decoration: none; }
 
 /* ---- Hero ---- */
 .am-hero {
-  background: linear-gradient(135deg, var(--am-navy) 0%, #0f172a 100%);
+  background: linear-gradient(rgba(10,18,40,0.72), rgba(10,18,40,0.72)),
+              url('/images/home_background.jpg') center center / cover no-repeat;
   color: #fff;
   padding: 3.5rem 0 3rem;
   margin-bottom: 2rem;
