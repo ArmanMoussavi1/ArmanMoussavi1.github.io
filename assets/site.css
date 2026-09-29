@@ -305,3 +305,15 @@ img { max-width: 100%; height: auto; }
   .am-pagehead h1 { font-size: 1.7rem; }
   .am-hero .hero-name { font-size: 2.1rem; }
 }
+
+/* Compact thrust and principle cards (short-form research agenda / teaching) */
+.am-thrust.compact { height: 100%; margin-bottom: 0; padding: 1.3rem 1.3rem 1.1rem; display: flex; flex-direction: column; }
+.am-thrust.compact h3 { font-size: 1.05rem; margin-bottom: 0.8rem; }
+.am-thrust.compact .num { width: 28px; height: 28px; font-size: 0.85rem; }
+.am-thrust.compact .am-figure { padding: 0.5rem; margin-bottom: 0.9rem; height: 300px; display: flex; align-items: center; justify-content: center; }
+.am-thrust.compact .am-figure img { width: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
+.am-thrust.compact p { font-size: 0.9rem; margin: 0; }
+.am-principle.compact { display: block; padding: 1.3rem 1.3rem 1.1rem; margin-bottom: 0; }
+.am-principle.compact .ico { width: 48px; height: 48px; font-size: 1.25rem; border-radius: 12px; margin-bottom: 0.8rem; }
+.am-principle.compact h3 { font-size: 1.02rem; margin-bottom: 0.4rem; }
+.am-principle.compact p { font-size: 0.9rem; }

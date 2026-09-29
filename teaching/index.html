@@ -66,8 +66,7 @@
 
   <div class="am-vision am-fade">
     <span class="am-kicker">Teaching Goal</span>
-    <blockquote>My goal is to develop independent thinkers who <strong>reason from fundamental principles</strong> rather than rely on learned procedures.</blockquote>
-    <p style="margin-bottom:0">That independence takes judgment: knowing which physical principles govern a problem, when a result can be trusted, and what ethical responsibilities follow from acting on it. I cultivate that judgment by building physical intuition through active exploration and by guiding students toward independent verification. I have developed this approach by teaching structural dynamics, contributing to graduate course development in computational nanomechanics, and mentoring undergraduate and junior graduate researchers.</p>
+    <blockquote style="margin-bottom:0">Develop independent thinkers who <strong>reason from fundamental principles</strong> rather than rely on learned procedures.</blockquote>
   </div>
 
   <!-- Philosophy -->
@@ -75,92 +74,71 @@
     <h2 class="am-section-title">Teaching Philosophy</h2>
   </div>
 
-  <div class="am-principle am-fade" style="--c:var(--st-proc)">
-    <div class="ico"><i class="fa-solid fa-lightbulb"></i></div>
-    <div>
-      <h3>Intuition through active exploration</h3>
-      <div class="sub">Build intuition before formalism</div>
-      <p>Students develop stronger conceptual understanding when they build intuition about a problem before formalizing it mathematically. As a teaching assistant for Structural Dynamics, I began recitations with qualitative reasoning and predictions before introducing derivations. I asked students to sketch mode shapes, anticipate limiting behavior, and interpret intermediate results. In problem sessions and in several full lectures I taught, students were more engaged when I paced problems around key ideas, paused to connect each step to the underlying concept, and invited them to explain their reasoning.</p>
-      <p>We used <strong>Google Colab demonstrations</strong> in which students completed portions of code, varied the parameters of a multi-degree-of-freedom building, and visualized its response, so they could test their predictions and connect equations to physical behavior. I plan to pair such activities with small-group discussion, so that students develop and compare their reasoning before the class examines different approaches together. Formal tools then deepen understanding and give students a framework they can carry across problems, methods, and disciplines.</p>
-    </div>
-  </div>
-
-  <div class="am-principle am-fade" style="--c:var(--st-mech)">
-    <div class="ico"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-    <div>
-      <h3>Engineers who audit, not only produce</h3>
-      <div class="sub">Know when a result can be trusted</div>
-      <p>Students who understand what a solution <em>should</em> mean are better equipped to recognize an unreasonable result, question its assumptions, and decide whether it can be trusted. This matters more as generative AI and other computational tools produce code, analyses, and designs with little effort. I designed a course project in which students used a large language model to produce a first-pass design and analysis of a structure's earthquake response, then <strong>audited</strong> it:</p>
-      <div class="am-steps" style="--c:var(--st-mech)">
-        <div><b>Generate</b>Draft the design and analysis with an LLM</div>
-        <div><b>Check assumptions</b>Are the model and loading physically right?</div>
-        <div><b>Verify</b>Unit consistency and numerical stability</div>
-        <div><b>Compare</b>Against an independent solution</div>
-        <div><b>Defend</b>Document failures, revise, and justify the final answer</div>
+  <div class="row am-fade">
+    <div class="col-lg-4 mb-4">
+      <div class="am-principle compact h-100" style="--c:var(--st-proc)">
+        <div class="ico"><i class="fa-solid fa-lightbulb"></i></div>
+        <div>
+          <h3>Intuition through active exploration</h3>
+          <p>Build physical intuition before formalism, through prediction, discussion, and interactive computation.</p>
+        </div>
       </div>
-      <p>Traditional problem sets remain valuable, but they should not ignore the tools students will meet beyond the classroom. I design assignments that embrace those tools while shifting the focus from producing an answer to understanding, testing, and defending it. AI can accelerate coding, optimization, and design exploration, but using it well requires knowing when its output can be trusted, and that distinction is essential to responsible engineering practice.</p>
     </div>
-  </div>
-
-  <div class="am-principle am-fade" style="--c:var(--st-design)">
-    <div class="ico"><i class="fa-solid fa-scale-balanced"></i></div>
-    <div>
-      <h3>Engineering with judgment and responsibility</h3>
-      <div class="sub">How we engineer matters as much as what we can engineer</div>
-      <p>At my core, I am a civil engineer, and I see engineering as a way to improve society through the built environment and the materials that enable it. Although my research spans materials science, nanomechanics, chemistry, and computation, that broader purpose should stay central to engineering education. Ethical judgment belongs throughout the curriculum, not only in design courses: students should weigh the consequences of the materials they develop, the assumptions behind the models they use, and the tools they trust.</p>
-      <p>I bring these questions into technical assignments through case studies and discussion, from the responsible use of AI to the environmental consequences of emerging materials, and I work to make these conversations a safe space where students raise concerns, challenge assumptions, and consider perspectives different from their own.</p>
+    <div class="col-lg-4 mb-4">
+      <div class="am-principle compact h-100" style="--c:var(--st-mech)">
+        <div class="ico"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <div>
+          <h3>Engineers who audit, not only produce</h3>
+          <p>Teach students to test and defend their results, including those produced with AI tools.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="am-principle compact h-100" style="--c:var(--st-design)">
+        <div class="ico"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div>
+          <h3>Judgment and responsibility</h3>
+          <p>How we engineer matters as much as what we can engineer.</p>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Experience -->
-  <div class="am-fade mt-4">
+  <div class="am-fade">
     <h2 class="am-section-title">Teaching Experience</h2>
     <div class="row">
       <div class="col-md-6 mb-3">
         <div class="am-course" style="--c:var(--st-mech)">
           <div class="tag">Teaching Assistant &bull; Winter 2026</div>
           <h5>Structural Dynamics (CIV_ENV 320), Northwestern</h5>
-          <p>Led recitations and problem-solving sessions and taught several full lectures. Designed and graded homework, exams, and project deliverables, built interactive Colab demonstrations of multi-degree-of-freedom buildings, and created the generative-AI audit project.</p>
+          <p>Recitations, lectures, and a generative-AI course project.</p>
         </div>
       </div>
       <div class="col-md-6 mb-3">
         <div class="am-course" style="--c:var(--st-ml)">
           <div class="tag">Course Development</div>
           <h5>Computational Nanomechanics (MECH_ENG 416), Northwestern</h5>
-          <p>Contributed to developing graduate course materials on computational methods for mechanics at the nanoscale.</p>
+          <p>Contributed to graduate course materials.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Courses -->
+  <!-- Future courses -->
   <div class="am-fade mt-3">
-    <h2 class="am-section-title">Courses I Can Teach</h2>
-    <p class="am-lead" style="max-width:820px">My experience prepares me to teach both the mechanics core and emerging computational areas, at the undergraduate and graduate levels.</p>
-    <div class="row">
-      <div class="col-md-4 mb-3"><div class="am-course"><div class="tag">Undergraduate core</div><h5>Statics</h5><p>Equilibrium, free-body reasoning, and the physical intuition every later course builds on.</p></div></div>
-      <div class="col-md-4 mb-3"><div class="am-course"><div class="tag">Undergraduate core</div><h5>Dynamics</h5><p>Kinematics and kinetics of particles and rigid bodies, with prediction before derivation.</p></div></div>
-      <div class="col-md-4 mb-3"><div class="am-course"><div class="tag">Undergraduate core</div><h5>Mechanics of Materials</h5><p>Stress, strain, and failure, connecting classical theory to the materials engineers use.</p></div></div>
-      <div class="col-md-6 mb-3"><div class="am-course" style="--c:var(--st-mech)"><div class="tag">Taught</div><h5>Structural Dynamics</h5><p>Modal analysis, multi-degree-of-freedom systems, and earthquake response, with computation and audited AI workflows.</p></div></div>
-      <div class="col-md-6 mb-3"><div class="am-course" style="--c:var(--st-ml)"><div class="tag">Developed materials</div><h5>Computational Nanomechanics</h5><p>Molecular simulation and mechanics at the nanoscale for graduate students.</p></div></div>
-    </div>
-  </div>
-
-  <div class="am-fade mt-3">
-    <h2 class="am-section-title">New Courses I Would Develop</h2>
+    <h2 class="am-section-title">Future Courses</h2>
     <div class="row">
       <div class="col-md-6 mb-3">
         <div class="am-course" style="--c:var(--st-proc)">
-          <div class="tag">New course</div>
           <h5>Mechanics of Soft Materials</h5>
-          <p>The mechanics of polymers, gels, elastomers, and biomaterials, combining fundamental engineering mechanics with the distinctive behavior of emerging materials. It draws on my training in soft-matter mechanics and fracture and on current research questions.</p>
+          <p>Polymers, gels, elastomers, and biomaterials.</p>
         </div>
       </div>
       <div class="col-md-6 mb-3">
         <div class="am-course" style="--c:var(--st-design)">
-          <div class="tag">New course</div>
           <h5>Computational Methods for Mechanics and Materials</h5>
-          <p>A progression from classical numerical methods and molecular simulation to machine-learned models, surrogate modeling, and automated optimization. Students build workflows that iteratively simulate, learn, and explore design spaces, as a hands-on introduction to closed-loop computational discovery.</p>
+          <p>From simulation to machine learning to closed-loop design.</p>
         </div>
       </div>
     </div>
@@ -168,30 +146,30 @@
 
   <!-- Mentoring -->
   <div class="am-fade mt-3">
-    <h2 class="am-section-title">Mentoring &amp; Advising</h2>
+    <h2 class="am-section-title">Mentoring</h2>
     <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="am-card h-100">
-          <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.7rem;"><i class="fa-solid fa-seedling" style="color:var(--st-proc);margin-right:8px;"></i>Building independence</h4>
-          <p style="font-size:0.9rem;color:#334155;line-height:1.7;">I view mentorship as building independence, in research and in the classroom. Through Northwestern's <strong>REU program</strong> (2023&ndash;2025), I mentored two undergraduate researchers from their initial questions through analysis, technical reports, and presentations in polymer mechanics and computational modeling.</p>
-          <p style="font-size:0.9rem;color:#334155;line-height:1.7;margin-bottom:0;">Less experienced researchers benefit from clear structure early, including a well-defined question and milestones, followed by growing ownership as they gain confidence. As a faculty mentor I will extend this to graduate researchers within a group culture grounded in inclusive collaboration, ethical research, open code, and continual reflection.</p>
+      <div class="col-md-6 mb-3">
+        <div class="am-course" style="--c:var(--st-proc)">
+          <div class="tag">2023 &ndash; 2025</div>
+          <h5><i class="fa-solid fa-seedling" style="color:var(--st-proc);margin-right:6px;"></i>Building independence</h5>
+          <p>Mentored undergraduate researchers through Northwestern's REU program.</p>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="am-card h-100">
-          <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.7rem;"><i class="fa-solid fa-people-group" style="color:var(--st-mech);margin-right:8px;"></i>Aspiring Future Faculty Program</h4>
-          <p style="font-size:0.9rem;color:#334155;line-height:1.7;">In 2023 I founded the Aspiring Future Faculty Program in Northwestern CEE, a seminar series connecting students interested in academic careers with faculty at different career stages and with members of grant-writing and review committees. Workshops cover research statements, teaching philosophies, and the faculty job market.</p>
-          <p style="font-size:0.9rem;color:#334155;line-height:1.7;margin-bottom:0;">It gives students access to conversations about academic careers that are usually learned informally. Supporting the next generation of engineers extends beyond my own classroom and research group.</p>
+      <div class="col-md-6 mb-3">
+        <div class="am-course" style="--c:var(--st-mech)">
+          <div class="tag">2023 &ndash; present</div>
+          <h5><i class="fa-solid fa-people-group" style="color:var(--st-mech);margin-right:6px;"></i>Aspiring Future Faculty Program</h5>
+          <p>Founded a seminar series in Northwestern CEE for students pursuing academic careers.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="am-fade" style="text-align:center;padding:1rem 0 0;">
+  <div class="am-fade" style="text-align:center;padding:1.5rem 0 0;">
     <div class="am-card" style="max-width:620px;margin:0 auto;">
       <i class="fa-solid fa-envelope-open-text fa-2x" style="color:var(--am-teal);margin-bottom:0.8rem;"></i>
       <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.6rem;">Interested in research or mentorship?</h4>
-      <p style="font-size:0.9rem;color:#475569;">I am always happy to talk with students interested in mechanics, molecular simulation, or machine learning for materials.</p>
+      <p style="font-size:0.9rem;color:#475569;">Students interested in mechanics, molecular simulation, or machine learning for materials are welcome to reach out.</p>
       <a href="mailto:armanmoussavi2027@u.northwestern.edu" class="am-btn am-btn-navy"><i class="fa-solid fa-envelope"></i> Get in touch</a>
     </div>
   </div>
