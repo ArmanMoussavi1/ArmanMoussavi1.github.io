@@ -1,21 +1,46 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research — Arman Moussavi</title>
-  <meta name="description" content="Research of Arman Moussavi, PhD Candidate at Northwestern University.">
+
+  <title>Research | Arman Moussavi</title>
+  <meta name="description" content="Arman Moussavi is a computational mechanician and Ph.D. candidate at Northwestern University building predictive frameworks that link molecular network architecture to the mechanics of soft materials, turning materials design from search into derivation.">
+
+  <!-- Open Graph / social media thumbnail -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://armanmoussavi1.github.io/research/">
+  <meta property="og:title" content="Research | Arman Moussavi">
+  <meta property="og:description" content="Arman Moussavi is a computational mechanician and Ph.D. candidate at Northwestern University building predictive frameworks that link molecular network architecture to the mechanics of soft materials, turning materials design from search into derivation.">
+  <meta property="og:image" content="https://armanmoussavi1.github.io/images/headshot.jpg?v=3">
+  <meta property="og:image:alt" content="Arman Moussavi">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Research | Arman Moussavi">
+  <meta name="twitter:description" content="Arman Moussavi is a computational mechanician and Ph.D. candidate at Northwestern University building predictive frameworks that link molecular network architecture to the mechanics of soft materials, turning materials design from search into derivation.">
+  <meta name="twitter:image" content="https://armanmoussavi1.github.io/images/headshot.jpg?v=3">
+  <meta name="twitter:image:alt" content="Arman Moussavi">
+
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="shortcut icon" type="image/jpeg" href="/images/headshot.jpg">
+  <link rel="stylesheet" href="/assets/site.css?v=1">
+  <link rel="canonical" href="/research/">
+  <link rel="shortcut icon" type="image/jpeg" href="/images/headshot.jpg?v=3">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-<body>
+
+  <body>
 
 <nav class="navbar sticky-top navbar-expand-md navbar-dark">
     <a class="navbar-brand" href="/">
-      <i class="fa-solid fa-atom" style="color:var(--am-teal);margin-right:7px;"></i>Arman Moussavi
+      <i class="fa-solid fa-circle-nodes" style="color:var(--am-teal);margin-right:7px;"></i>Arman Moussavi
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,120 +59,384 @@
 
 <div class="container-fluid am-page">
 
+  <!-- Header -->
+  <div class="am-pagehead am-fade">
+    <span class="am-kicker dark">Research Program</span>
+    <h1>Turning materials design from <span>search</span> into <span>derivation</span></h1>
+    <p>Rather than screening candidates and testing them, engineers should be able to reason from a target mechanical response back to the molecular structure and processing conditions that produce it, guided by the physical principles involved. My research resolves the assembled, chemically crosslinked, and physically entangled nanostructure of polymeric and nanocomposite materials, traces how it governs mechanical response, and turns <strong>network topology</strong> from a hidden consequence of synthesis into a <strong>design variable</strong>.</p>
+  </div>
+
+  <!-- The loop -->
   <div class="am-fade">
-    <h1 class="am-section-title" style="font-size:1.9rem;">Research</h1>
-    <p style="color:var(--am-muted);font-size:0.92rem;max-width:720px;margin-bottom:1.8rem;">My work bridges molecular simulation, machine learning, and materials theory to understand and design the next generation of soft and nanoscale materials — from polymer-grafted nanoparticles to hydrogels — with real-world implications in sustainable separations and structural resilience.</p>
+    <figure class="am-figure" style="padding:1.2rem 1.2rem 0.9rem;">
+      <img src="/images/research/research_loop.webp" alt="Research loop: processing variables (composition, concentration, temperature, time) set the molecular network structure, which governs mechanics (stress-strain response). Three numbered efforts: 1 mapping processing conditions, 2 deriving interpretable mechanics laws, 3 closing the processing-to-mechanics loop." width="2155" height="994">
+      <figcaption><b>The research loop.</b> Map processing to structure, uncover interpretable mechanistic laws governing structure&ndash;property relationships, and close the loop to design new materials with targeted properties while retaining a mechanistic understanding of their behavior. <em>Molecular simulation &bull; mechanistic theory &bull; physics-based machine learning.</em></figcaption>
+    </figure>
+
+    <div class="am-loop light">
+      <div class="am-loop-row">
+        <a class="am-loop-node" href="#thrust-1" style="--c:var(--st-proc)"><i class="fa-solid fa-flask-vial"></i><b>Processing</b><small>the recipe engineers control</small></a>
+        <div class="am-loop-arrow" style="--c:var(--st-proc)"><span>1</span><i class="fa-solid fa-arrow-right"></i></div>
+        <a class="am-loop-node" href="#foundation" style="--c:var(--st-loop)"><i class="fa-solid fa-circle-nodes"></i><b>Molecular Network</b><small>the structure it produces</small></a>
+        <div class="am-loop-arrow" style="--c:var(--st-mech)"><span>2</span><i class="fa-solid fa-arrow-right"></i></div>
+        <a class="am-loop-node" href="#thrust-2" style="--c:var(--st-mech)"><i class="fa-solid fa-chart-line"></i><b>Mechanics</b><small>the response that emerges</small></a>
+        <div class="am-loop-arrow" style="--c:var(--st-design)"><span>3</span><i class="fa-solid fa-arrow-right"></i></div>
+        <a class="am-loop-node" href="#thrust-3" style="--c:var(--st-design)"><i class="fa-solid fa-bullseye"></i><b>Design</b><small>from target back to recipe</small></a>
+      </div>
+      <div class="am-loop-return"><em>closing the loop</em></div>
+    </div>
   </div>
 
-  <!-- Graduate Research -->
-  <div class="am-fade" style="transition-delay:0.04s">
-    <h2 class="am-section-title" style="font-size:1.2rem;">Graduate Research &mdash; Keten Laboratory, Northwestern University</h2>
-    <p style="color:var(--am-muted);font-size:0.88rem;margin-bottom:1.2rem;">Advisor: Prof. Sinan Keten &bull; Sept 2022 &ndash; Present</p>
+  <!-- Foundation -->
+  <div class="am-fade mt-5" id="foundation" style="scroll-margin-top:80px">
+    <h2 class="am-section-title">The Foundation: Topology Controls Mechanics</h2>
+    <p class="am-lead" style="max-width:820px">My dissertation established how network topology in polymer nanocomposites and soft polymeric networks controls emergent mechanical behavior, across three very different material classes.</p>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="am-pillar" style="--c:var(--st-mech);height:100%">
+          <i class="fa-solid fa-layer-group"></i>
+          <h5>Polymer-grafted nanoparticles</h5>
+          <p>Coarse-grained MD and theory showed how interdigitation and entanglement modulate nanoconfinement, governing stiffness, toughness, and gas transport. These insights guide lightweight, high-strength materials and tunable separation membranes.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="am-pillar" style="--c:var(--st-loop);height:100%">
+          <i class="fa-solid fa-circle-nodes"></i>
+          <h5>Crosslinked polymer networks</h5>
+          <p>Graph-theoretic representations link heterogeneous connectivity, including loops, dangling chains, and entanglements, to large-deformation mechanics and fracture.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="am-pillar" style="--c:var(--st-proc);height:100%">
+          <i class="fa-solid fa-droplet"></i>
+          <h5>Micellar hydrogels</h5>
+          <p>Long molecular bridges between micelles toughen the gel and enable cooling-induced shape memory, confirmed by experimental collaborators in synthesized gels. Network connectivity is a design lever for soft robotics and biomedical devices.</p>
+        </div>
+      </div>
+    </div>
+    <p class="am-lead" style="max-width:820px;margin-top:0.6rem">Each insight required costly simulation of individual networks. To make topology a <em>practical</em> design variable, I built <a href="#tango" style="color:#4f46e5;font-weight:700">TANGO</a>.</p>
+  </div>
+
+</div><!-- /container -->
+
+<!-- ============ TANGO SPOTLIGHT ============ -->
+<section class="am-spotlight" id="tango" style="scroll-margin-top:60px">
+  <div class="container-fluid">
+    <span class="am-kicker"><i class="fa-solid fa-star"></i> Research Highlight</span><br>
+    <h2 class="tango">TANGO</h2>
+    <div class="expand"><b>T</b>opology-<b>A</b>ware <b>N</b>eural <b>G</b>raph <b>O</b>perator for material constitutive laws</div>
+    <div style="margin-bottom:1.2rem">
+      <span class="am-badge gold"><i class="fa-solid fa-award"></i> ICLR 2026 &bull; AI4MATSCI Workshop</span>
+      <span class="am-badge"><i class="fa-solid fa-plane-departure"></i> ICLR Travel Grant</span>
+      <span class="am-badge"><i class="fa-solid fa-file-pen"></i> Full paper in preparation</span>
+    </div>
+
+    <div class="am-video">
+      <video controls preload="metadata" playsinline poster="/videos/tango_poster.jpg">
+        <source src="/videos/tango_explainer.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="/videos/tango_explainer.mp4">Download the TANGO explainer (MP4)</a>.
+      </video>
+    </div>
+    <p style="font-size:0.8rem;color:#94a3b8;margin-top:0.6rem;"><i class="fa-solid fa-circle-play"></i> A four-minute explainer: why topology matters, how TANGO reads a network, and how it designs one.</p>
+
+    <div class="row mt-4">
+      <div class="col-lg-6">
+        <p><strong>The problem.</strong> Two polymer networks built from the same ingredients can respond completely differently, because what matters is <em>how</em> the chains are wired: crosslinks, entanglements, loops, and dangling ends. Resolving that with molecular simulation costs hours of supercomputer time per network, which makes searching over network architectures intractable.</p>
+      </div>
+      <div class="col-lg-6">
+        <p><strong>The approach.</strong> TANGO reads a network as a graph and uses edge-conditioned graph attention to learn a topology embedding. Queried at any strain, it predicts the <strong>full nonlinear stress&ndash;strain response through fracture</strong>, with calibrated aleatoric and epistemic uncertainty. Trained on coarse-grained MD, it matches simulation accuracy at more than seven orders of magnitude lower cost, fast enough for <strong>inverse design</strong>: specify a target curve, and retrieve the network that produces it.</p>
+      </div>
+    </div>
+
+    <div class="am-stats">
+      <div class="am-stat"><div class="v">&gt;10<sup>7</sup>&times;</div><div class="l">lower inference cost than coarse-grained MD</div></div>
+      <div class="am-stat"><div class="v">~7 ms</div><div class="l">per network, versus ~3 h on 100 cores</div></div>
+      <div class="am-stat"><div class="v">20,000</div><div class="l">networks screened in 1.1 h (&asymp;685 CPU-years by CGMD)</div></div>
+      <div class="am-stat"><div class="v">R&sup2; 0.97</div><div class="l">on shear modulus; beats feed-forward and S2P baselines</div></div>
+    </div>
+
+    <div class="am-tabs" data-tabs="tangoFigs" role="tablist">
+      <button class="am-tab active" data-target="tf-overview" role="tab" aria-selected="true">Overview</button>
+      <button class="am-tab" data-target="tf-accuracy" role="tab" aria-selected="false">Accuracy</button>
+      <button class="am-tab" data-target="tf-latent" role="tab" aria-selected="false">What it learns</button>
+      <button class="am-tab" data-target="tf-ood" role="tab" aria-selected="false">Generalization</button>
+      <button class="am-tab" data-target="tf-design" role="tab" aria-selected="false">Inverse design</button>
+    </div>
+    <div id="tangoFigs">
+      <div class="am-tabpanel active" id="tf-overview" role="tabpanel">
+        <figure class="am-figure">
+          <img src="/images/research/tango_overview.webp" alt="TANGO overview figure, panels a through g" loading="lazy" width="2000" height="1841">
+          <figcaption><b>From molecular topology to mechanical design.</b> (a) Coarse-grained polymer networks with chemical crosslinks, entanglements, dangling ends, and loops. (b) Uniaxial deformation to failure generates training data. (c) Each network is encoded as a graph with E(3)-invariant node features. (d) A graph-attention encoder with edge-conditioned attention is paired with a continuous strain query and a shared decoder. (e) TANGO predicts mean stress with aleatoric and epistemic uncertainty. (f) Mechanical property exploration across modulus, strength, toughness, and entanglement and crosslink density. (g) Nano-architectural design across polymer entanglement and crosslinker functionality.</figcaption>
+        </figure>
+      </div>
+      <div class="am-tabpanel" id="tf-accuracy" role="tabpanel">
+        <figure class="am-figure">
+          <img src="/images/research/tango_accuracy.webp" alt="TANGO accuracy: predicted versus simulated stress-strain curves and derived properties" loading="lazy" width="2000" height="1223">
+          <figcaption><b>Simulation-level accuracy across mechanical regimes.</b> (a) Predictions against CGMD for stiff, compliant, brittle, tough, ductile, and stiff-and-ductile networks with &plusmn;1&sigma; uncertainty. (b) Pointwise parity by regime: initial elasticity R&sup2; = 0.991, nonlinear elastic 0.984, fracture 0.854. (c) Per-curve error across all test systems (median MAE 0.0015). (d&ndash;f) Derived properties: shear modulus (R&sup2; = 0.972), ultimate stress (0.953), and work to failure (0.873), outperforming feed-forward and structure-to-property baselines.</figcaption>
+        </figure>
+      </div>
+      <div class="am-tabpanel" id="tf-latent" role="tabpanel">
+        <figure class="am-figure">
+          <img src="/images/research/tango_latent.webp" alt="TANGO learned embedding space organized by structure and work to failure" loading="lazy" width="2000" height="1327">
+          <figcaption><b>The learned embedding organizes networks by physics.</b> (a) Principal components of the graph embedding arrange networks along structural arcs ordered by work to failure. (b) The embedding tracks local descriptors (entanglement degree, chemical degree, dangling-end fraction) and global ones (efficiency, algebraic connectivity, modularity). (c&ndash;d) Responses change systematically along the structural arc and across entanglement quantiles. This is the starting point for extracting interpretable laws.</figcaption>
+        </figure>
+      </div>
+      <div class="am-tabpanel" id="tf-ood" role="tabpanel">
+        <figure class="am-figure">
+          <img src="/images/research/tango_generalization.webp" alt="TANGO interpolation and extrapolation tests" loading="lazy" width="1905" height="1199">
+          <figcaption><b>Generalization beyond the training data.</b> (a) Held-out interpolation and extrapolation splits along chain length, crosslinker functionality, and entanglement per chain. (b) Predicted responses for interpolated and extrapolated systems. (c) Extrapolation carries little or no penalty (error ratios 0.94&ndash;1.23&times;) about two standard deviations outside the training distribution. (d) Test sets probe both low and high shifts in network heterogeneity.</figcaption>
+        </figure>
+      </div>
+      <div class="am-tabpanel" id="tf-design" role="tabpanel">
+        <figure class="am-figure">
+          <img src="/images/research/tango_inverse_design.webp" alt="TANGO inverse design: screening 20,000 networks and matching hand-drawn target curves" loading="lazy" width="2000" height="1163">
+          <figcaption><b>Inverse design: from a target curve to a network.</b> (a) Screening 20,000 polymer networks takes 1.1 hours with TANGO, compared with roughly 685 CPU-years of CGMD, mapping the stiffness&ndash;ductility landscape, Pareto fronts, and gaps in the training data. (b) Selected designs are validated directly in CGMD. (c&ndash;f) A hand-drawn target stress&ndash;strain curve is matched by retrieving the network that produces it; the realized CGMD response and deformation snapshots confirm the design.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="am-cite">
+      <b>Moussavi, A.</b>, Yildirim, A. B., &amp; Keten, S. &ldquo;Topology-Aware Neural Graph Operator (TANGO) for Material Constitutive Laws.&rdquo; <em>ICLR 2026 AI4MATSCI Workshop</em> (non-archival). Built with PyTorch Geometric on networks extracted from LAMMPS trajectories; trained on multi-GPU HPC.
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid am-page" style="padding-top:0.5rem">
+
+  <!-- ============ THRUSTS ============ -->
+  <div class="am-fade">
+    <span class="am-kicker dark">Research Agenda</span><br>
+    <h2 class="am-section-title">Three Efforts Around the Loop</h2>
+    <p class="am-lead" style="max-width:820px">Full derivation is a long-term goal. I approach it in tractable stages, and the efforts are deliberately decoupled so that each produces standalone results without depending on the others.</p>
+  </div>
+
+  <div class="am-thrust am-fade" id="thrust-1" style="--c:var(--st-proc)">
+    <h3><span class="num">1</span>Closing the process&ndash;structure&ndash;mechanics loop</h3>
+    <div class="arrowline">Processing &rarr; Molecular network</div>
+    <div class="row">
+      <div class="col-md-8">
+        <p>This effort extends design upstream, from specifying structure to controlling the processes that create it. I will pursue it in <strong>self-assembled Pluronic hydrogels</strong>, where composition, concentration, and temperature govern micellar networks whose size, packing, and connectivity set macroscopic mechanics. My preliminary studies show that synthesis conditions generate distinct populations of network structures, suggesting that <strong>graph generative models</strong> trained on coarse-grained MD can learn the mapping from processing to emergent structure.</p>
+        <p>Pluronics are inexpensive, thermoreversible, and characterizable with standard rheology and scattering, so closed-loop validation is feasible with a single experimental partner. They are also used in injectable and printable biomaterials, extracellular-matrix mimics, and biofabricated scaffolds, which makes synthesis conditions a deliberate design parameter with real applications.</p>
+        <div class="foundation"><b>Builds on:</b> micellar-hydrogel connectivity, toughness, and shape memory (<em>Adv. Funct. Mater.</em> 2026) &bull; ongoing collaboration with the Truby group &bull; TANGO as the structure&rarr;mechanics link.</div>
+      </div>
+      <div class="col-md-4 mt-3 mt-md-0">
+        <figure class="am-figure" style="margin:0">
+          <img src="/images/research/processing_to_structure.webp" alt="A processing recipe of block copolymers maps to different micellar network graphs and simulated structures" loading="lazy" width="734" height="1117">
+          <figcaption>Mapping synthesis variables to molecular network structures.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="am-thrust am-fade" id="thrust-2" style="--c:var(--st-mech)">
+    <h3><span class="num">2</span>Extracting interpretable laws from learned mechanics</h3>
+    <div class="arrowline">Molecular network &rarr; Mechanics, made inspectable</div>
+    <div class="row">
+      <div class="col-md-4 order-2 order-md-1 mt-3 mt-md-0">
+        <figure class="am-figure" style="margin:0">
+          <img src="/images/research/law_discovery.webp" alt="Workflow: extract structure-property trends, fit competing hypotheses, falsify and refine, arrive at a mechanistic scaling law" loading="lazy" width="600" height="1409">
+          <figcaption>Autonomous discovery of interpretable mechanics laws for polymer networks.</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-8 order-1 order-md-2">
+        <p>A result no one can inspect cannot be certified for safety-critical design. TANGO predicts <em>how</em> complex topologies produce mechanical responses, but not <em>why</em> particular structural features control them. This effort moves beyond prediction to discover the physical principles organizing the structure&ndash;property map.</p>
+        <p>TANGO serves as a mechanics surrogate that generates large-scale structure&ndash;response data. <strong>Symbolic regression</strong>, informed by established physical principles, proposes candidate laws, which are constrained by dimensional consistency, frame indifference, and thermodynamic validity, then <strong>falsified with targeted simulations</strong>. Iterative refinement turns empirical relationships into mechanistic laws. The same approach <strong>audits classical elasticity and fracture scaling relations</strong>, identifying where they hold, where heterogeneous networks break them, and which structural variables extend them.</p>
+        <p>Interpretable laws also let this work outlive its software: an engineer can learn, test, and apply a scaling relation without ever running the underlying model.</p>
+        <div class="foundation"><b>Builds on:</b> TANGO's physically organized embedding space &bull; graph descriptors of hydrogel topology and fracture &bull; CAMEL's causal process&ndash;structure&ndash;property knowledge graphs from the literature.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="am-thrust am-fade" id="thrust-3" style="--c:var(--st-design)">
+    <h3><span class="num">3</span>Discovering materials with novel mechanical behavior</h3>
+    <div class="arrowline">Target mechanics &rarr; Network &rarr; Material</div>
+    <p>This effort targets property combinations often treated as fundamentally opposed: <strong>stiffness with toughness, strength with extensibility, and performance with reprocessability</strong>. It turns the framework into a discovery engine that derives molecular network structure from the function a material must perform. I have already used TANGO as a surrogate for direct CGMD to identify networks that match prescribed stress&ndash;strain responses, with selected designs validated in simulation.</p>
+    <p>Next, <strong>generative graph models</strong> will propose physically realizable networks for target responses, and <strong>calibrated uncertainty</strong> will route unreliable predictions to higher-fidelity validation, so that every design stays linked to the structural features that govern it. A common network representation will extend this across micellar and colloidal gels, polymer&ndash;nanoparticle composites, bio-inspired protein networks, and vitrimers with load-responsive bonds, revealing which mechanical relationships are general and which are system-specific.</p>
+    <figure class="am-figure" style="margin:0.6rem 0 1rem">
+      <img src="/images/research/tango_inverse_design.webp" alt="Inverse design results with TANGO" loading="lazy" width="2000" height="1163">
+      <figcaption>Preliminary inverse design with TANGO: screening the stiffness&ndash;ductility landscape and realizing hand-drawn target responses in CGMD.</figcaption>
+    </figure>
+    <div class="foundation"><b>Builds on:</b> TANGO inverse design &bull; PGN, hydrogel, and resilin-like protein networks as test beds across material classes.</div>
+  </div>
+
+  <!-- ============ PROJECT EXPLORER ============ -->
+  <div class="am-fade mt-5" id="projects" style="scroll-margin-top:80px">
+    <span class="am-kicker dark">All Projects</span><br>
+    <h2 class="am-section-title">Where Each Project Sits on the Loop</h2>
+    <p class="am-lead" style="max-width:820px">Every project, past and present, filtered by the part of the loop it advances.</p>
+
+    <div class="am-chips">
+      <button class="am-chip active" data-filter="all"><i class="fa-solid fa-arrows-rotate"></i>All</button>
+      <button class="am-chip s-proc" data-filter="proc"><i class="fa-solid fa-flask-vial"></i>&#9312; Processing &rarr; Structure</button>
+      <button class="am-chip s-mech" data-filter="mech"><i class="fa-solid fa-chart-line"></i>&#9313; Structure &rarr; Mechanics</button>
+      <button class="am-chip s-design" data-filter="design"><i class="fa-solid fa-bullseye"></i>&#9314; Design</button>
+      <button class="am-chip s-ml" data-filter="ml"><i class="fa-solid fa-brain"></i>ML &amp; Methods</button>
+      <button class="am-chip s-loop" data-filter="roots"><i class="fa-solid fa-road"></i>Civil Engineering Roots</button>
+    </div>
 
     <div class="row">
 
-      <div class="col-lg-4 col-md-6 mb-4 am-fade" style="transition-delay:0.06s">
-        <div class="am-research-card">
-          <div class="am-research-icon"><i class="fa-solid fa-layer-group"></i></div>
-          <h4>Polymer-Grafted Nanoparticle Mechanics</h4>
-          <p>Polymer-grafted nanoparticles (PGNs) are single-component materials with rich, tunable mechanical behavior driven by molecular architecture. My work develops theoretical frameworks and molecular dynamics simulations using LAMMPS to understand how grafting density, chain length, and core size govern shear response, toughness, and assembly behavior.</p>
-          <p>A key discovery: nanoconfinement suppresses chain interdigitation and entanglement during assembly. <em>Releasing</em> that confinement allows chains to re-entangle, dramatically toughening the resulting solid — with implications for structural adhesives and impact-resistant coatings.</p>
-          <div class="am-tags">
-            <span class="am-tag">LAMMPS</span>
-            <span class="am-tag">Molecular Dynamics</span>
-            <span class="am-tag">Polymer Physics</span>
-            <span class="am-tag">Entanglement</span>
-          </div>
-          <div style="margin-top:0.8rem;">
-            <a href="/publications" style="font-size:0.82rem;color:var(--am-teal);font-weight:600;">View related publications &rarr;</a>
-          </div>
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="mech design ml">
+        <div class="am-proj featured">
+          <div><span class="am-stage s-mech">Structure &rarr; Mechanics</span><span class="am-stage s-design">Design</span><span class="am-stage s-ml">ML</span></div>
+          <div class="when">Aug 2025 &ndash; present &bull; Highlight</div>
+          <h4>TANGO: Topology-Aware Neural Graph Operator</h4>
+          <p>A graph neural operator that predicts the full nonlinear stress&ndash;strain response of disordered polymer networks directly from molecular topology, conditioned on the applied strain state, at CGMD-comparable accuracy and more than seven orders of magnitude lower cost. It enables inverse design loops over network topology that are intractable with direct simulation.</p>
+          <div class="meta"><a href="#tango">Video &amp; figures &uarr;</a> &bull; ICLR 2026 AI4MATSCI Workshop</div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 mb-4 am-fade" style="transition-delay:0.09s">
-        <div class="am-research-card">
-          <div class="am-research-icon"><i class="fa-solid fa-wind"></i></div>
-          <h4>PGN Gas Separation Membranes</h4>
-          <p>In collaboration with Prof. Sanat Kumar (Columbia University), I investigate the gas transport properties of PGN membranes — a promising alternative to traditional polymer membranes for industrial separations (e.g., CO₂ capture, H₂ purification).</p>
-          <p>We developed a two-channel permeability model that separates contributions from the polymer brush matrix and nanoparticle-mediated free volume, providing a predictive framework to overcome the Robeson upper-bound tradeoff between permeability and selectivity. This work was published in <em>Macromolecules</em> (2025).</p>
-          <div class="am-tags">
-            <span class="am-tag">Gas Transport</span>
-            <span class="am-tag">Free Volume</span>
-            <span class="am-tag">Permeability Theory</span>
-            <span class="am-tag">Robeson Bound</span>
-          </div>
-          <div style="margin-top:0.8rem;">
-            <a href="https://doi.org/10.1021/acs.macromol.4c02541" target="_blank" style="font-size:0.82rem;color:var(--am-teal);font-weight:600;">Macromolecules 2025 &rarr;</a>
-          </div>
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="mech">
+        <div class="am-proj">
+          <div><span class="am-stage s-mech">Structure &rarr; Mechanics</span></div>
+          <div class="when">Jun 2024 &ndash; present</div>
+          <h4>Multiscale modeling of hydrogel network topology and fracture</h4>
+          <p>Coarse-grained MD of model hydrogels with controlled topological disorder, linking graph descriptors of the network (loops, dangling chains, connectivity) to large-deformation mechanics and fracture. This work positions hydrogel topology as a tunable design variable for soft and biomedical materials.</p>
+          <div class="meta">With Prof. Junsoo Kim (Northwestern ME) &bull; Talks at SES 2025 and USNCCM 18</div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 mb-4 am-fade" style="transition-delay:0.12s">
-        <div class="am-research-card">
-          <div class="am-research-icon"><i class="fa-solid fa-droplet"></i></div>
-          <h4>Hydrogel Fracture &amp; Toughening</h4>
-          <p>In collaboration with Prof. Junsoo Kim (Northwestern MechE), I study fracture toughness of hydrogels — soft, water-swollen networks with applications in biomedical devices, soft robotics, and protective materials.</p>
-          <p>Current work focuses on viscous dissipation and monomeric friction as toughening mechanisms, and on using network topology (graph-theoretic measures) to predict and design fracture resistance. A companion project develops deep-learning-based coarse-grained models capable of reproducing hydrogel mechanics at larger scales.</p>
-          <div class="am-tags">
-            <span class="am-tag">Fracture Mechanics</span>
-            <span class="am-tag">Network Topology</span>
-            <span class="am-tag">Hydrogels</span>
-            <span class="am-tag">Deep Learning</span>
-          </div>
-          <div style="margin-top:0.8rem;">
-            <a href="/publications" style="font-size:0.82rem;color:var(--am-teal);font-weight:600;">Manuscripts in preparation &rarr;</a>
-          </div>
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="proc mech">
+        <div class="am-proj">
+          <div><span class="am-stage s-proc">Processing &rarr; Structure</span><span class="am-stage s-mech">Structure &rarr; Mechanics</span></div>
+          <div class="when">Published 2026</div>
+          <h4>Inter-micellar connectivity in micellar hydrogels</h4>
+          <p>Simulations showed that long molecular bridges between micelles toughen micellar hydrogels and impart cooling-induced shape memory. Experimental collaborators confirmed both effects in synthesized gels, establishing network connectivity as a design lever for tough, temperature-responsive hydrogels.</p>
+          <div class="meta"><a href="https://doi.org/10.1002/adfm.77448" target="_blank" rel="noopener"><em>Advanced Functional Materials</em> 2026</a> &bull; Foundation for Thrust 1</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="mech">
+        <div class="am-proj">
+          <div><span class="am-stage s-mech">Structure &rarr; Mechanics</span></div>
+          <div class="when">Sep 2022 &ndash; present</div>
+          <h4>Mechanics of polymer-grafted nanoparticle assemblies</h4>
+          <p>The first systematic theory for the shear and tensile response of glassy polymer-grafted nanoparticle (PGN) assemblies. Nanoconfinement suppresses chain interdigitation and entanglement, and <em>releasing</em> it lets chains re-entangle, substantially toughening the solid.</p>
+          <div class="meta"><a href="https://doi.org/10.1021/acs.nanolett.5c00680" target="_blank" rel="noopener"><em>Nano Letters</em> 2025</a> &bull; <a href="https://doi.org/10.1063/5.0188494" target="_blank" rel="noopener"><em>J. Chem. Phys.</em> 2024</a></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="mech">
+        <div class="am-proj">
+          <div><span class="am-stage s-mech">Structure &rarr; Transport</span></div>
+          <div class="when">Sep 2022 &ndash; 2025</div>
+          <h4>Gas transport in PGN membranes</h4>
+          <p>A two-channel model for gas permeability in PGN membranes that separates transport through the polymer matrix from nanoparticle-mediated free volume, offering a route around the permeability&ndash;selectivity trade-off in mixed-matrix membranes.</p>
+          <div class="meta">With Prof. Sanat Kumar (Columbia) &bull; <a href="https://doi.org/10.1021/acs.macromol.4c02541" target="_blank" rel="noopener"><em>Macromolecules</em> 2025</a></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="proc mech">
+        <div class="am-proj">
+          <div><span class="am-stage s-proc">Processing &rarr; Structure</span><span class="am-stage s-mech">Structure &rarr; Mechanics</span></div>
+          <div class="when">Oct 2025 &ndash; present</div>
+          <h4>Sequence-encoded disorder in resilin-like proteins</h4>
+          <p>A multiscale framework linking glycine- and proline-driven sequence disorder to molecular entanglement and elastic response in resilin-like polypeptides and hybrid resilin&ndash;spidroin constructs. It connects sequence-level chemistry to network-level mechanics, extending topology-aware modeling to biological soft materials.</p>
+          <div class="meta">Toward bio-inspired protein networks (Thrust 3)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="proc">
+        <div class="am-proj">
+          <div><span class="am-stage s-proc">Processing &rarr; Structure</span></div>
+          <div class="when">Jan 2026 &ndash; present</div>
+          <h4>Diffusion and dynamics in ripening ATP condensates</h4>
+          <p>Molecular dynamics simulations and supporting theory that explain experimental observations of diffusion and dynamics as ATP condensates ripen, giving a molecular-scale mechanism for the kinetics of biomolecular condensate evolution.</p>
+          <div class="meta">With Prof. Muzhou Wang (Northwestern ChBE) &bull; Submitted to <em>Science</em></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="proc mech">
+        <div class="am-proj">
+          <div><span class="am-stage s-proc">Processing &rarr; Structure</span><span class="am-stage s-mech">Structure &rarr; Mechanics</span></div>
+          <div class="when">Under review</div>
+          <h4>Loop&ndash;linear topological graft blends</h4>
+          <p>Tailoring the interfacial properties of polymer-grafted nanoparticle composites by blending loop and linear graft topologies, so that graft architecture becomes a chemistry-level handle on composite mechanics.</p>
+          <div class="meta">Under review, <em>Macromolecules</em></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="ml mech">
+        <div class="am-proj">
+          <div><span class="am-stage s-ml">ML &amp; Methods</span><span class="am-stage s-mech">Structure &rarr; Mechanics</span></div>
+          <div class="when">Mar 2025 &ndash; present</div>
+          <h4>Learnable coarse-graining with graph network simulators</h4>
+          <p>Extended a graph network simulator to learn particle-level dynamics under prescribed deformation schedules, with thermodynamic logging, per-particle mass, and full LAMMPS I/O. A multi-GPU training pipeline with box conditioning and deformation-tensor inputs lays the foundation for learned coarse-grained mappings and stress prediction with physical consistency guarantees.</p>
+          <div class="meta">PyTorch Geometric &bull; LAMMPS &bull; multi-GPU HPC</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="ml design">
+        <div class="am-proj">
+          <div><span class="am-stage s-ml">ML &amp; Methods</span><span class="am-stage s-design">Design</span></div>
+          <div class="when">May 2025 &ndash; present</div>
+          <h4>CAMEL: Causal Analysis of Materials Extracted from Literature</h4>
+          <p>A multimodal LLM pipeline in which independent agents parse text, figures, and tables in parallel, then merge causal process&ndash;structure&ndash;property relationships into interpretable knowledge graphs for inverse design and hypothesis generation. On the spider-silk literature it reached over 90% correctness, with substantially higher coverage than a text-only baseline.</p>
+          <div class="meta"><a href="https://github.com/gourav-k/LLM4Causal" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> LLM4Causal</a> &bull; Began at the 2025 LLM Hackathon for Materials &amp; Chemistry</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="proc">
+        <div class="am-proj">
+          <div><span class="am-stage s-proc">Processing &rarr; Structure</span></div>
+          <div class="when">In preparation</div>
+          <h4>Allomelanin composite membranes</h4>
+          <p>In situ solid-state polymerization of allomelanin within electrospun fibers to create multifunctional composite membranes, a case where the processing route itself builds the functional structure.</p>
+          <div class="meta">Collaborative manuscript in preparation</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="roots design">
+        <div class="am-proj">
+          <div><span class="am-stage s-loop">Civil Roots</span><span class="am-stage s-design">Design</span></div>
+          <div class="when">2021 &ndash; 2022 &bull; University of Nebraska&ndash;Lincoln</div>
+          <h4>Bio-inspired roadside safety hardware</h4>
+          <p>Proposed new barrier and crash-cushion concepts inspired by biological structures in a USDOT-funded project, and reviewed the state of the art in bio-inspired crashworthy design. Advised by Prof. Congrui Grace Jin.</p>
+          <div class="meta"><a href="https://doi.org/10.1016/j.matdes.2025.113760" target="_blank" rel="noopener"><em>Materials &amp; Design</em> 2025</a></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 am-projcol" data-stages="roots">
+        <div class="am-proj">
+          <div><span class="am-stage s-loop">Civil Roots</span></div>
+          <div class="when">2020 &ndash; 2021 &bull; University of Nebraska&ndash;Lincoln</div>
+          <h4>Digital reconnaissance after natural hazards</h4>
+          <p>Built a digital repository of disaster impacts from local news, NOAA, USGS, and Civil Air Patrol imagery to assess damage to buildings and other structures remotely. Advised by Prof. Christine Wittich.</p>
+          <div class="meta"><a href="https://doi.org/10.1061/9780784484548.062" target="_blank" rel="noopener"><em>Forensic Engineering 2022</em></a> &bull; SNERP 2020</div>
         </div>
       </div>
 
     </div>
   </div>
 
-  <!-- Undergraduate Research -->
-  <div class="am-fade" style="transition-delay:0.15s;margin-top:1.5rem;">
-    <h2 class="am-section-title" style="font-size:1.2rem;">Undergraduate Research &mdash; University of Nebraska–Lincoln</h2>
-    <p style="color:var(--am-muted);font-size:0.88rem;margin-bottom:1.2rem;">2020 &ndash; 2022</p>
+  <!-- Long-term vision -->
+  <div class="am-vision am-fade mt-4">
+    <span class="am-kicker">Long-Term Vision</span>
+    <blockquote>My long-term goal is to let engineers <strong>derive molecular network structures from a desired material behavior</strong>, with the physical principles governing a material kept visible throughout design rather than hidden inside a model.</blockquote>
+    <p>The central challenge is an invertible description of how complex networks give rise to behavior, connected in an unbroken chain from the processing conditions engineers control, through the structures those conditions produce, to the response that emerges. Over the next decade I aim to make this a transferable approach to materials design that unites mechanics, molecular simulation, and machine learning, with every link computationally tractable and physically interpretable.</p>
+    <p style="margin-bottom:0">Because these methods are computational and interpretable, they lower the cost of materials discovery and put it within reach of groups without large experimental or simulation infrastructure. I want to build tools other researchers reach for, aimed at the materials society most needs to improve, from recyclable polymers to durable biomedical and lightweight structural materials.</p>
+  </div>
 
-    <div class="row">
-
-      <div class="col-lg-6 col-md-6 mb-4 am-fade" style="transition-delay:0.17s">
-        <div class="am-research-card">
-          <div class="am-research-icon"><i class="fa-solid fa-road"></i></div>
-          <h4>Bio-Inspired Roadside Safety Hardware</h4>
-          <p>Advised by Prof. Congrui Grace Jin, I investigated how biological structures (e.g., trabecular bone, plant stems, insect exoskeletons) can inspire crashworthy roadside safety barriers and guardrails. The project resulted in a review article published in <em>Materials &amp; Design</em> (2025) documenting the state of the art and identifying avenues for bio-inspired structural design.</p>
-          <div class="am-tags">
-            <span class="am-tag">Bio-Inspired Design</span>
-            <span class="am-tag">Impact Mechanics</span>
-            <span class="am-tag">Crashworthiness</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 col-md-6 mb-4 am-fade" style="transition-delay:0.20s">
-        <div class="am-research-card">
-          <div class="am-research-icon"><i class="fa-solid fa-satellite"></i></div>
-          <h4>Post-Disaster Digital Reconnaissance</h4>
-          <p>Advised by Prof. Christine Wittich, I developed methods for assessing structural damage after natural hazards using digital sources — satellite imagery, social media, and local news articles. This work contributed to the emerging field of virtual (remote) reconnaissance, presented at the SNERP Symposium (2020) and published in the <em>Forensic Engineering 2022</em> conference proceedings.</p>
-          <div class="am-tags">
-            <span class="am-tag">Remote Sensing</span>
-            <span class="am-tag">NOAA / USGS Data</span>
-            <span class="am-tag">Structural Damage</span>
-            <span class="am-tag">Natural Hazards</span>
-          </div>
-        </div>
-      </div>
-
+  <!-- Collaborators -->
+  <div class="am-fade mt-4">
+    <h2 class="am-section-title" style="font-size:1.2rem;">Collaborators</h2>
+    <div class="am-tags">
+      <span class="am-tag">Prof. Sinan Keten (Advisor, Northwestern)</span>
+      <span class="am-tag">Prof. Sanat Kumar (Columbia ChemE)</span>
+      <span class="am-tag">Prof. Junsoo Kim (Northwestern ME)</span>
+      <span class="am-tag">Prof. Muzhou Wang (Northwestern ChBE)</span>
+      <span class="am-tag">Truby Group (micellar hydrogels)</span>
     </div>
   </div>
 
-</div>
+</div><!-- /container -->
 
 <section id="footer" class="am-footer">
   <div class="container-footer">
     <div class="row">
       <div class="col-sm-4 mb-3">
         <h5>Arman Moussavi</h5>
-        <p>Ph.D. Candidate, Civil &amp; Environmental Engineering<br>Northwestern University, Evanston IL</p>
+        <p>Ph.D. Candidate, Civil &amp; Environmental Engineering<br>Northwestern University, Evanston IL<br><span style="opacity:0.75">Designing soft materials by derivation, not search.</span></p>
       </div>
       <div class="col-sm-4 mb-3">
         <h5>Contact</h5>
@@ -157,10 +446,10 @@
       <div class="col-sm-4 mb-3">
         <h5>Connect</h5>
         <div class="footer-social">
-          <a href="https://github.com/ArmanMoussavi1" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://scholar.google.com/scholar?q=Arman+Moussavi+Northwestern" target="_blank"><i class="ai ai-google-scholar"></i></a>
-          <a href="https://www.linkedin.com/in/arman-moussavi" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="mailto:armanmoussavi2027@u.northwestern.edu"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/ArmanMoussavi1" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=QV3f9SgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/arman-moussavi-599916276/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:armanmoussavi2027@u.northwestern.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -168,14 +457,11 @@
   </div>
 </section>
 
+<div class="am-lightbox" id="amLightbox" role="dialog" aria-modal="true" aria-label="Enlarged figure"><span class="close" aria-hidden="true">&times;</span><img alt=""></div>
+
 <script src="/assets/javascript/bootstrap/jquery.min.js"></script>
 <script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
-<script>
-  const fadeEls = document.querySelectorAll('.am-fade');
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  fadeEls.forEach(el => obs.observe(el));
-</script>
-</body>
+<script src="/assets/site.js?v=1"></script>
+
+  </body>
 </html>
